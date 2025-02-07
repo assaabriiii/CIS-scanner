@@ -1,0 +1,414 @@
+# PASSED THE TEST AND CHANGES MADE TO SYSTEM COMPELETLY
+
+[2025-01-07T15:25:44] Running all scripts in ./scripts...
+[2025-01-07T15:25:44] Running account.sh...
+[2025-01-07T15:25:44] Locking unnecessary system accounts.
+[2025-01-07T15:25:44] Locked account: daemon.
+[2025-01-07T15:25:44] Locked account: bin.
+[2025-01-07T15:25:44] Locked account: sys.
+[2025-01-07T15:25:44] Locked account: sync.
+[2025-01-07T15:25:44] Locked account: games.
+[2025-01-07T15:25:44] Locked account: man.
+[2025-01-07T15:25:44] Locked account: lp.
+[2025-01-07T15:25:44] Locked account: mail.
+[2025-01-07T15:25:44] Locked account: news.
+[2025-01-07T15:25:44] Locked account: uucp.
+[2025-01-07T15:25:44] Locked account: proxy.
+[2025-01-07T15:25:44] Locked account: www-data.
+[2025-01-07T15:25:44] Locked account: backup.
+[2025-01-07T15:25:44] Locked account: list.
+[2025-01-07T15:25:44] Locked account: irc.
+[2025-01-07T15:25:44] Locked account: _apt.
+[2025-01-07T15:25:44] Locked account: systemd-network.
+[2025-01-07T15:25:44] Locked account: systemd-timesync.
+[2025-01-07T15:25:44] Locked account: dhcpcd.
+[2025-01-07T15:25:44] Locked account: messagebus.
+[2025-01-07T15:25:44] Locked account: syslog.
+[2025-01-07T15:25:44] Locked account: systemd-resolve.
+[2025-01-07T15:25:44] Locked account: uuidd.
+[2025-01-07T15:25:44] Locked account: sshd.
+[2025-01-07T15:25:44] Locked account: pollinate.
+[2025-01-07T15:25:44] Locked account: tcpdump.
+[2025-01-07T15:25:44] Locked account: landscape.
+[2025-01-07T15:25:44] Locked account: fwupd-refresh.
+[2025-01-07T15:25:44] Locked account: polkitd.
+[2025-01-07T15:25:44] Locked account: dnsmasq.
+[2025-01-07T15:25:44] Locked account: postfix.
+[2025-01-07T15:25:44] Locked account: _aide.
+[2025-01-07T15:25:44] Locked account: _chrony.
+[2025-01-07T15:25:44] Checking for accounts with empty passwords.
+[2025-01-07T15:25:44] Backup created for /etc/login.defs
+[2025-01-07T15:25:44] Updated /etc/login.defs with secure password policies.
+[2025-01-07T15:25:44] Expiring passwords for inactive accounts.
+[2025-01-07T15:25:44] Set password expiration for nobody.
+[2025-01-07T15:25:44] Set password expiration for ubuntu.
+[2025-01-07T15:25:44] Account Security Hardening completed.
+[2025-01-07T15:25:44] account.sh completed successfully.
+[2025-01-07T15:25:44] Running apparmor.sh...
+[2025-01-07T15:25:44] Installing AppArmor and utilities...
+[2025-01-07T15:25:44] Failed to install AppArmor. Check log for details.
+[2025-01-07T15:25:44] Backup created for /etc/default/grub
+[2025-01-07T15:25:44] AppArmor is already configured in GRUB.
+[2025-01-07T15:25:44] Setting AppArmor profiles to complain mode...
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] AppArmor setup completed.
+[2025-01-07T15:25:44] apparmor.sh completed successfully.
+[2025-01-07T15:25:44] Running audit.sh...
+[2025-01-07T15:25:44] Installing auditd and setting up audit rules.
+[2025-01-07T15:25:44] auditd installed successfully.
+[2025-01-07T15:25:44] Backup created for /etc/audit/audit.rules
+[2025-01-07T15:25:44] Backup created for /etc/audit/auditd.conf
+[2025-01-07T15:25:44] Updated /etc/audit/audit.rules with basic audit rules.
+[2025-01-07T15:25:44] Updated /etc/audit/auditd.conf for enhanced logging.
+[2025-01-07T15:25:44] Restarting auditd to apply changes.
+[2025-01-07T15:25:44] auditd restarted successfully.
+[2025-01-07T15:25:44] Audit Hardening completed.
+[2025-01-07T15:25:44] audit.sh completed successfully.
+[2025-01-07T15:25:44] Running auth.sh...
+[2025-01-07T15:25:44] Starting Authentication Hardening...
+[2025-01-07T15:25:44] Backup created for /etc/login.defs
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-auth
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-password
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libpam-pwquality is already the newest version (1.4.5-3build1).
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+[2025-01-07T15:25:44] Authentication Hardening completed.
+[2025-01-07T15:25:44] auth.sh completed successfully.
+[2025-01-07T15:25:44] Running cron.sh...
+[2025-01-07T15:25:44] Starting Cron Security Hardening...
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+cron is already the newest version (3.0pl1-184ubuntu2).
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+Synchronizing state of cron.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable cron
+[2025-01-07T15:25:44] Cron installed and enabled.
+[2025-01-07T15:25:44] Removed cron.deny and at.deny files.
+[2025-01-07T15:25:44] Created and secured cron.allow and at.allow files.
+[2025-01-07T15:25:44] Secured directory: /etc/cron.hourly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.daily
+[2025-01-07T15:25:44] Secured directory: /etc/cron.weekly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.monthly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.d
+[2025-01-07T15:25:44] Secured /etc/crontab
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.d/e2scrub_all
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.d/sysstat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/apport
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/apt-compat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/dailyaidecheck
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/dpkg
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/logrotate
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/man-db
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/sysstat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.weekly/man-db
+[2025-01-07T15:25:44] Cron Security Hardening completed.
+[2025-01-07T15:25:44] cron.sh completed successfully.
+[2025-01-07T15:25:44] Running files.sh...
+[2025-01-07T15:25:44] Updated permissions for /etc/passwd.
+[2025-01-07T15:25:44] Updated permissions for /etc/shadow.
+[2025-01-07T15:25:44] Updated permissions for /etc/group.
+[2025-01-07T15:25:44] Updated permissions for /etc/gshadow.
+[2025-01-07T15:25:44] Updated permissions for /etc/hosts.
+[2025-01-07T15:25:44] Updated permissions for /etc/issue.
+[2025-01-07T15:25:44] Updated permissions for /etc/issue.net.
+[2025-01-07T15:25:44] /etc/motd not found. Skipping.
+[2025-01-07T15:25:44] Updated permissions for /root.
+[2025-01-07T15:25:44] Updated permissions for /var/log.
+[2025-01-07T15:25:44] File Permissions Hardening completed.
+[2025-01-07T15:25:44] files.sh completed successfully.
+[2025-01-07T15:25:44] Running filesystem.sh...
+Starting Filesystem Configuration...
+[2025-01-07T15:25:44] Backup created for /etc/modprobe.d/disabled-fs.conf
+[2025-01-07T15:25:44] Backup created for /etc/modprobe.d/modprobe.conf
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: cramfs
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: freevxfs
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: hfs
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: hfsplus
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: overlayfs
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: squashfs
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: udf
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: jffs2
+[2025-01-07T15:25:44] Disabled and blacklisted filesystem: usb-storage
+[2025-01-07T15:25:44] Filesystem module cramfs is not loaded.
+[2025-01-07T15:25:44] Filesystem module freevxfs is not loaded.
+[2025-01-07T15:25:44] Filesystem module hfs is not loaded.
+[2025-01-07T15:25:44] Filesystem module hfsplus is not loaded.
+[2025-01-07T15:25:44] Filesystem module overlayfs is not loaded.
+[2025-01-07T15:25:44] Filesystem module squashfs is not loaded.
+[2025-01-07T15:25:44] Filesystem module udf is not loaded.
+[2025-01-07T15:25:44] Filesystem module jffs2 is not loaded.
+[2025-01-07T15:25:44] Filesystem module usb-storage is not loaded.
+Filesystem Configuration Completed.
+[2025-01-07T15:25:44] filesystem.sh completed successfully.
+[2025-01-07T15:25:44] Running kernel.sh...
+[2025-01-07T15:25:44] Backup created for /etc/sysctl.conf
+kernel.randomize_va_space = 2
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.randomize_va_space=2
+kernel.yama.ptrace_scope = 2
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.yama.ptrace_scope=2
+fs.suid_dumpable = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: fs.suid_dumpable=0
+net.ipv4.ip_forward = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.ip_forward=0
+net.ipv4.conf.all.send_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.send_redirects=0
+net.ipv4.conf.default.send_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.send_redirects=0
+net.ipv4.conf.all.accept_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.accept_redirects=0
+net.ipv4.conf.default.accept_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.accept_redir
+net.ipv4.conf.all.secure_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.secure_redirects=0
+net.ipv4.conf.default.secure_redirects = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.secure_redirects=0
+net.ipv4.conf.all.log_martians = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.log_martians=1
+net.ipv4.conf.default.log_martians = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.log_martians=1
+net.ipv4.tcp_syncookies = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.tcp_syncookies=1
+net.ipv6.conf.all.disable_ipv6 = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6 = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.all.forwarding = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.all.forwarding=0
+net.ipv6.conf.default.forwarding = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.default.forwarding=0
+net.ipv4.icmp_echo_ignore_broadcasts = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.icmp_echo_ignore_broadcasts=1
+net.ipv4.icmp_ignore_bogus_error_responses = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.icmp_ignore_bogus_error_responses=1
+net.ipv4.conf.all.rp_filter = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.rp_filter=1
+net.ipv4.conf.default.rp_filter = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.rp_filter=1
+net.ipv6.conf.all.accept_ra = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.all.accept_ra=0
+net.ipv6.conf.default.accept_ra = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.default.accept_ra=0
+net.ipv4.conf.all.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.accept_source_route=0
+net.ipv4.conf.default.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.accept_source_route=0
+net.ipv6.conf.all.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.all.accept_source_route=0
+net.ipv6.conf.default.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv6.conf.default.accept_source_route=0
+fs.protected_hardlinks = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: fs.protected_hardlinks=1
+fs.protected_symlinks = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: fs.protected_symlinks=1
+kernel.kptr_restrict = 2
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.kptr_restrict=2
+kernel.dmesg_restrict = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.dmesg_restrict=1
+net.ipv4.tcp_timestamps = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.tcp_timestamps=0
+net.ipv4.tcp_syncookies = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.tcp_syncookies=1
+net.ipv4.conf.all.rp_filter = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.rp_filter=1
+net.ipv4.conf.default.rp_filter = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.rp_filter=1
+net.ipv4.conf.all.log_martians = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.log_martians=1
+net.ipv4.conf.default.log_martians = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.log_martians=1
+net.ipv4.icmp_echo_ignore_broadcasts = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.icmp_echo_ignore_broadcasts=1
+net.ipv4.icmp_ignore_bogus_error_responses = 1
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.icmp_ignore_bogus_error_responses=1
+net.ipv4.conf.all.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.all.accept_source_route=0
+net.ipv4.conf.default.accept_source_route = 0
+[2025-01-07T15:25:44] Applied sysctl parameter: net.ipv4.conf.default.accept_source_route=0
+[2025-01-07T15:25:44] Kernel hardening parameters applied.
+Kernel Hardening Completed.
+[2025-01-07T15:25:44] kernel.sh completed successfully.
+[2025-01-07T15:25:44] Running limits.sh...
+[2025-01-07T15:25:44] Starting System Limits Hardening...
+[2025-01-07T15:25:44] Backup created for /etc/security/limits.conf
+[2025-01-07T15:25:44] Backup created for /etc/sysctl.d/99-security-limits.conf
+fs.suid_dumpable = 0
+kernel.core_uses_pid = 1
+kernel.dmesg_restrict = 1
+kernel.panic = 60
+kernel.panic_on_oops = 60
+kernel.perf_event_paranoid = 3
+kernel.randomize_va_space = 2
+kernel.sysrq = 0
+kernel.unprivileged_bpf_disabled = 1
+net.core.bpf_jit_harden = 2
+vm.panic_on_oom = 0
+vm.swappiness = 10
+[2025-01-07T15:25:44] System limits applied successfully.
+[2025-01-07T15:25:44] System Limits Hardening completed.
+[2025-01-07T15:25:44] limits.sh completed successfully.
+[2025-01-07T15:25:44] Running logging.sh...
+[2025-01-07T15:25:44] Starting System Logging Hardening...
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+rsyslog is already the newest version (8.2312.0-3ubuntu9).
+logrotate is already the newest version (3.21.0-2build1).
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+[2025-01-07T15:25:44] Backup created for /etc/rsyslog.conf
+[2025-01-07T15:25:44] Backup created for /etc/logrotate.conf
+chmod: cannot access '/var/log/boot.log': No such file or directory
+[2025-01-07T15:25:44] System Logging Hardening completed.
+[2025-01-07T15:25:44] logging.sh completed successfully.
+[2025-01-07T15:25:44] Running ntp.sh...
+[2025-01-07T15:25:44] Installing chrony for time synchronization.
+[2025-01-07T15:25:44] chrony installed successfully.
+[2025-01-07T15:25:44] Backup created for /etc/chrony/chrony.conf
+[2025-01-07T15:25:44] Updated /etc/chrony/chrony.conf with secure NTP server settings.
+[2025-01-07T15:25:44] Restarting chrony service.
+[2025-01-07T15:25:44] chrony restarted successfully.
+[2025-01-07T15:25:44] Time Synchronization Hardening completed.
+[2025-01-07T15:25:44] ntp.sh completed successfully.
+[2025-01-07T15:25:44] Running pam.sh...
+[2025-01-07T15:25:44] Installing required PAM packages.
+[2025-01-07T15:25:44] Required PAM packages installed successfully.
+[2025-01-07T15:25:44] Starting PAM Hardening...
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-auth.
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-password.
+[2025-01-07T15:25:44] Configuring strong password policies in PAM.
+[2025-01-07T15:25:44] Updated /etc/pam.d/common-password to enforce strong passwords.
+[2025-01-07T15:25:44] Testing PAM configuration for password policies.
+Testing password policy: Expect rejection for weak passwords.
+[2025-01-07T15:25:44] Password policy test passed: Weak password rejected.
+[2025-01-07T15:25:44] Testing lockout policy: Expect lockout after 5 failed attempts.
+faillog: Unknown user or range: testuser
+[2025-01-07T15:25:44] Lockout policy test failed: User not locked out.
+[2025-01-07T15:25:44] pam.sh failed. Check the logs for details.
+[2025-01-07T15:25:44] Running partitions.sh...
+[2025-01-07T15:25:44] Starting Secure Temporary Partitions Configuration...
+[2025-01-07T15:25:44] Backup created for /etc/fstab.
+[2025-01-07T15:25:44] Securing /tmp with options: nodev,nosuid,noexec.
+[2025-01-07T15:25:44] /tmp not found in /etc/fstab. Adding entry.
+[2025-01-07T15:25:44] Remounting /tmp with restrictive options.
+[2025-01-07T15:25:44] Failed to remount /tmp. Check logs for details.
+[2025-01-07T15:25:44] partitions.sh failed. Check the logs for details.
+[2025-01-07T15:25:44] Running process.sh...
+[2025-01-07T15:25:44] Backup created for /etc/sysctl.conf
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.randomize_va_space = 2
+[2025-01-07T15:25:44] Applied sysctl parameter: kernel.yama.ptrace_scope = 2
+[2025-01-07T15:25:44] Applied sysctl parameter: fs.suid_dumpable = 0
+[2025-01-07T15:25:44] prelink is not installed, skipping removal.
+[2025-01-07T15:25:44] Removed apport successfully.
+[2025-01-07T15:25:44] Process Hardening completed.
+[2025-01-07T15:25:44] process.sh completed successfully.
+[2025-01-07T15:25:44] Running rotate.sh...
+[2025-01-07T15:25:44] Installing auditd and setting up audit rules.
+[2025-01-07T15:25:44] auditd installed successfully.
+[2025-01-07T15:25:44] Backup created for /etc/audit/audit.rules
+[2025-01-07T15:25:44] Backup created for /etc/audit/auditd.conf
+[2025-01-07T15:25:44] Updated /etc/audit/audit.rules with basic audit rules.
+[2025-01-07T15:25:44] Updated /etc/audit/auditd.conf for enhanced logging.
+[2025-01-07T15:25:44] Restarting auditd to apply changes.
+[2025-01-07T15:25:44] auditd restarted successfully.
+[2025-01-07T15:25:44] Audit Hardening completed.
+[2025-01-07T15:25:44] rotate.sh completed successfully.
+[2025-01-07T15:25:44] Running rsyslog.sh...
+[2025-01-07T15:25:44] Installing rsyslog if not already installed.
+[2025-01-07T15:25:44] rsyslog installed successfully.
+[2025-01-07T15:25:44] Backup created for /etc/rsyslog.conf.
+[2025-01-07T15:25:44] Updated /etc/rsyslog.conf with secure logging settings.
+[2025-01-07T15:25:44] Restricting access to system log files.
+[2025-01-07T15:25:44] Permissions updated for /var/log directory and its contents.
+[2025-01-07T15:25:44] Restarting rsyslog service.
+[2025-01-07T15:25:44] rsyslog restarted successfully.
+[2025-01-07T15:25:44] System Log Hardening completed.
+[2025-01-07T15:25:44] rsyslog.sh completed successfully.
+[2025-01-07T15:25:44] Running services.sh...
+[2025-01-07T15:25:44] Disabling and removing service: autofs
+[2025-01-07T15:25:44] autofs is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: avahi-daemon
+[2025-01-07T15:25:44] avahi-daemon is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: isc-dhcp-server
+[2025-01-07T15:25:44] isc-dhcp-server is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: bind9
+[2025-01-07T15:25:44] bind9 removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: dnsmasq
+[2025-01-07T15:25:44] dnsmasq removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: slapd
+[2025-01-07T15:25:44] slapd is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: dovecot-imapd
+[2025-01-07T15:25:44] dovecot-imapd is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: dovecot-pop3d
+[2025-01-07T15:25:44] dovecot-pop3d is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: nfs-kernel-server
+[2025-01-07T15:25:44] nfs-kernel-server is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: ypserv
+[2025-01-07T15:25:44] ypserv is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: cups
+[2025-01-07T15:25:44] cups removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: rpcbind
+[2025-01-07T15:25:44] rpcbind is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: rsync
+[2025-01-07T15:25:44] rsync removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: samba
+[2025-01-07T15:25:44] samba is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: snmpd
+[2025-01-07T15:25:44] snmpd is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: tftpd-hpa
+[2025-01-07T15:25:44] tftpd-hpa is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: squid
+[2025-01-07T15:25:44] squid is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: apache2
+[2025-01-07T15:25:44] apache2 is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: nginx
+[2025-01-07T15:25:44] nginx is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: xinetd
+[2025-01-07T15:25:44] xinetd is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: xserver-common
+[2025-01-07T15:25:44] xserver-common is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: postfix
+[2025-01-07T15:25:44] postfix stopped successfully.
+[2025-02-26T15:25:59] postfix disabled successfully.
+[2025-01-07T15:25:44] postfix removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: nis
+[2025-01-07T15:25:44] nis removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: rsh-client
+[2025-01-07T15:25:44] rsh-client is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: talk
+[2025-01-07T15:25:44] talk is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: telnet
+[2025-01-07T15:25:44] telnet removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: inetutils-telnet
+[2025-01-07T15:25:44] inetutils-telnet removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: ldap-utils
+[2025-01-07T15:25:44] ldap-utils is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: ftp
+[2025-01-07T15:25:44] ftp removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: tnftp
+[2025-01-07T15:25:44] tnftp removed successfully.
+[2025-01-07T15:25:44] Disabling and removing service: lp
+[2025-01-07T15:25:44] Failed to remove lp.
+[2025-01-07T15:25:44] Disabling and removing service: bluez
+[2025-01-07T15:25:44] bluez is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: gdm3
+[2025-01-07T15:25:44] gdm3 is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: whoopsie
+[2025-01-07T15:25:44] whoopsie is not installed. Skipping removal.
+[2025-01-07T15:25:44] Disabling and removing service: snapd
+[2025-01-07T15:25:44] snapd disabled successfully.
+[2025-01-07T15:25:44] snapd removed successfully.
+[2025-01-07T15:25:44] Service hardening completed.
+[2025-01-07T15:25:44] services.sh completed successfully.
+[2025-01-07T15:25:44] Running ssh.sh...

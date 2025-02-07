@@ -1,0 +1,117 @@
+# ERROR ON CRON PART -> NETWORK ERROR
+# MUST CHANGE REPOSITORY
+
+
+[2025-01-07T15:25:44] Running all scripts in ./scripts...
+[2025-01-07T15:25:44] Running account.sh...
+[2025-01-07T15:25:44] Locking unnecessary system accounts.
+[2025-01-07T15:25:44] Locked account: daemon.
+[2025-01-07T15:25:44] Locked account: bin.
+[2025-01-07T15:25:44] Locked account: sys.
+[2025-01-07T15:25:44] Locked account: sync.
+[2025-01-07T15:25:44] Locked account: games.
+[2025-01-07T15:25:44] Locked account: man.
+[2025-01-07T15:25:44] Locked account: lp.
+[2025-01-07T15:25:44] Locked account: mail.
+[2025-01-07T15:25:44] Locked account: news.
+[2025-01-07T15:25:44] Locked account: uucp.
+[2025-01-07T15:25:44] Locked account: proxy.
+[2025-01-07T15:25:44] Locked account: www-data.
+[2025-01-07T15:25:44] Locked account: backup.
+[2025-01-07T15:25:44] Locked account: list.
+[2025-01-07T15:25:44] Locked account: irc.
+[2025-01-07T15:25:44] Locked account: _apt.
+[2025-01-07T15:25:44] Locked account: systemd-network.
+[2025-01-07T15:25:44] Locked account: systemd-timesync.
+[2025-01-07T15:25:44] Locked account: dhcpcd.
+[2025-01-07T15:25:44] Locked account: messagebus.
+[2025-01-07T15:25:44] Locked account: syslog.
+[2025-01-07T15:25:44] Locked account: systemd-resolve.
+[2025-01-07T15:25:44] Locked account: uuidd.
+[2025-01-07T15:25:44] Locked account: sshd.
+[2025-01-07T15:25:44] Locked account: pollinate.
+[2025-01-07T15:25:44] Locked account: tcpdump.
+[2025-01-07T15:25:44] Locked account: landscape.
+[2025-01-07T15:25:44] Locked account: fwupd-refresh.
+[2025-01-07T15:25:44] Locked account: polkitd.
+[2025-01-07T15:25:44] Locked account: dnsmasq.
+[2025-01-07T15:25:44] Locked account: postfix.
+[2025-01-07T15:25:44] Locked account: _aide.
+[2025-01-07T15:25:44] Locked account: _chrony.
+[2025-01-07T15:25:44] Checking for accounts with empty passwords.
+[2025-01-07T15:25:44] Backup created for /etc/login.defs
+[2025-01-07T15:25:44] Updated /etc/login.defs with secure password policies.
+[2025-01-07T15:25:44] Expiring passwords for inactive accounts.
+[2025-01-07T15:25:44] Set password expiration for nobody.
+[2025-01-07T15:25:44] Set password expiration for ubuntu.
+[2025-01-07T15:25:44] Account Security Hardening completed.
+[2025-01-07T15:25:44] account.sh completed successfully.
+[2025-01-07T15:25:44] Running apparmor.sh...
+[2025-01-07T15:25:44] Installing AppArmor and utilities...
+[2025-01-07T15:25:44] Failed to install AppArmor. Check log for details.
+[2025-01-07T15:25:44] Backup created for /etc/default/grub
+[2025-01-07T15:25:44] AppArmor is already configured in GRUB.
+[2025-01-07T15:25:44] Setting AppArmor profiles to complain mode...
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] AppArmor setup completed.
+[2025-01-07T15:25:44] apparmor.sh completed successfully.
+[2025-01-07T15:25:44] Running audit.sh...
+[2025-01-07T15:25:44] Installing auditd and setting up audit rules.
+[2025-01-07T15:25:44] auditd installed successfully.
+[2025-01-07T15:25:44] Backup created for /etc/audit/audit.rules
+[2025-01-07T15:25:44] Backup created for /etc/audit/auditd.conf
+[2025-01-07T15:25:44] Updated /etc/audit/audit.rules with basic audit rules.
+[2025-01-07T15:25:44] Updated /etc/audit/auditd.conf for enhanced logging.
+[2025-01-07T15:25:44] Restarting auditd to apply changes.
+[2025-01-07T15:25:44] auditd restarted successfully.
+[2025-01-07T15:25:44] Audit Hardening completed.
+[2025-01-07T15:25:44] audit.sh completed successfully.
+[2025-01-07T15:25:44] Running auth.sh...
+[2025-01-07T15:25:44] Starting Authentication Hardening...
+[2025-01-07T15:25:44] Backup created for /etc/login.defs
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-auth
+[2025-01-07T15:25:44] Backup created for /etc/pam.d/common-password
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libpam-pwquality is already the newest version (1.4.5-3build1).
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+[2025-01-07T15:25:44] Authentication Hardening completed.
+[2025-01-07T15:25:44] auth.sh completed successfully.
+[2025-01-07T15:25:44] Running cron.sh...
+[2025-01-07T15:25:44] Starting Cron Security Hardening...
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+cron is already the newest version (3.0pl1-184ubuntu2).
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 114 not upgraded.
+Synchronizing state of cron.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable cron
+[2025-01-07T15:25:44] Cron installed and enabled.
+[2025-01-07T15:25:44] Removed cron.deny and at.deny files.
+[2025-01-07T15:25:44] Created and secured cron.allow and at.allow files.
+[2025-01-07T15:25:44] Secured directory: /etc/cron.hourly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.daily
+[2025-01-07T15:25:44] Secured directory: /etc/cron.weekly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.monthly
+[2025-01-07T15:25:44] Secured directory: /etc/cron.d
+[2025-01-07T15:25:44] Secured /etc/crontab
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.d/e2scrub_all
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.d/sysstat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/apport
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/apt-compat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/dailyaidecheck
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/dpkg
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/logrotate
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/man-db
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.daily/sysstat
+[2025-01-07T15:25:44] Secured cron job: /etc/cron.weekly/man-db
+[2025-01-07T15:25:44] Cron Security Hardening completed.
+[2025-01-07T15:25:44] cron.sh completed successfully.

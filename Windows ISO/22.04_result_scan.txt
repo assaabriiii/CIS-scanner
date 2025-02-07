@@ -1,0 +1,58 @@
+# ERROR ON AUDIT PART -> PREMISSIONS ERROR
+
+
+[2025-01-07T15:25:44] Running all scripts in ./scripts...
+[2025-01-07T15:25:44] Running account.sh...
+[2025-01-07T15:25:44] Locking unnecessary system accounts.
+[2025-01-07T15:25:44] Locked account: daemon.
+[2025-01-07T15:25:44] Locked account: bin.
+[2025-01-07T15:25:44] Locked account: sys.
+[2025-01-07T15:25:44] Locked account: sync.
+[2025-01-07T15:25:44] Locked account: games.
+[2025-01-07T15:25:44] Locked account: man.
+[2025-01-07T15:25:44] Locked account: lp.
+[2025-01-07T15:25:44] Locked account: mail.
+[2025-01-07T15:25:44] Locked account: news.
+[2025-01-07T15:25:44] Locked account: uucp.
+[2025-01-07T15:25:44] Locked account: proxy.
+[2025-01-07T15:25:44] Locked account: www-data.
+[2025-01-07T15:25:44] Locked account: backup.
+[2025-01-07T15:25:44] Locked account: list.
+[2025-01-07T15:25:44] Locked account: irc.
+[2025-01-07T15:25:44] Locked account: _apt.
+[2025-01-07T15:25:44] Locked account: systemd-network.
+[2025-01-07T15:25:44] Locked account: systemd-timesync.
+[2025-01-07T15:25:44] Locked account: dhcpcd.
+[2025-01-07T15:25:44] Locked account: messagebus.
+[2025-01-07T15:25:44] Locked account: syslog.
+[2025-01-07T15:25:44] Locked account: systemd-resolve.
+[2025-01-07T15:25:44] Locked account: uuidd.
+[2025-01-07T15:25:44] Locked account: sshd.
+[2025-01-07T15:25:44] Locked account: pollinate.
+[2025-01-07T15:25:44] Locked account: tcpdump.
+[2025-01-07T15:25:44] Locked account: landscape.
+[2025-01-07T15:25:44] Locked account: fwupd-refresh.
+[2025-01-07T15:25:44] Locked account: polkitd.
+[2025-01-07T15:25:44] Locked account: dnsmasq.
+[2025-01-07T15:25:44] Locked account: postfix.
+[2025-01-07T15:25:44] Locked account: _aide.
+[2025-01-07T15:25:44] Locked account: _chrony.
+[2025-01-07T15:25:44] Checking for accounts with empty passwords.
+[2025-01-07T15:25:44] Backup created for /etc/login.defs
+[2025-01-07T15:25:44] Updated /etc/login.defs with secure password policies.
+[2025-01-07T15:25:44] Expiring passwords for inactive accounts.
+[2025-01-07T15:25:44] Set password expiration for nobody.
+[2025-01-07T15:25:44] Set password expiration for ubuntu.
+[2025-01-07T15:25:44] Account Security Hardening completed.
+[2025-01-07T15:25:44] account.sh completed successfully.
+[2025-01-07T15:25:44] Running apparmor.sh...
+[2025-01-07T15:25:44] Installing AppArmor and utilities...
+[2025-01-07T15:25:44] Failed to install AppArmor. Check log for details.
+[2025-01-07T15:25:44] Backup created for /etc/default/grub
+[2025-01-07T15:25:44] AppArmor is already configured in GRUB.
+[2025-01-07T15:25:44] Setting AppArmor profiles to complain mode...
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] Failed to set mode. to complain mode.
+[2025-01-07T15:25:44] AppArmor setup completed.
+[2025-01-07T15:25:44] apparmor.sh completed successfully.
+[2025-01-07T15:25:44] Running audit.sh...
