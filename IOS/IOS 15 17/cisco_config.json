@@ -1,0 +1,10 @@
+{
+    "asa": {
+        "interfaces": {
+            "untrusted":[],
+            "internet-facing":[]
+        },
+        "dns_servers":[],
+        "inspect_protocol":[]
+    }
+}
