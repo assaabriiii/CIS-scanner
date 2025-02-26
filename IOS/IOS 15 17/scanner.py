@@ -2,7 +2,6 @@ from datetime import datetime
 from ssh import ssh_login
 from init import ios_version_check, cisco_type_check, arguments, argument_checks, user_input, target_parse
 from audit_modules.audit_ios15 import run_cis_cisco_ios_15_assessment, parsed_output_ios15
-from audit_modules.audit_ios17 import run_cis_cisco_ios_17_assessment, parsed_output_ios17
 from audit_modules.audit_asa import run_cis_cisco_asa_assessment
 from report_temp.score import score_compute
 from report_temp.html_report import report_html_output
@@ -89,25 +88,7 @@ def fdni():
                     print("Exporting to an HTML output.")
                     report_html_output(parsed_cis_ios_15_assessment, cis_ios_15_compliance_score, report_filename, 
                                        ip_address, ios_version)
-            
-            elif ios_version == 17:
-                print(f"Cisco IOS Version: {ios_version}")
-                print("Running CIS Ciso IOS 17 Benchmark assessment.\n")
-                cis_ios_17_assessment = run_cis_cisco_ios_17_assessment(connection)
-                parsed_cis_ios_17_assessment = parsed_output_ios17(cis_ios_17_assessment)
-                
-                print("Generating assessment report.\n")
-                cis_ios_17_compliance_score = score_compute(parsed_cis_ios_17_assessment)
-
-                if arguments().output is None and arguments().interactive:
-                    report_cli_output(parsed_cis_ios_17_assessment, cis_ios_17_compliance_score, ip_address, ios_version)
-                else:
-                    report_cli_output(parsed_cis_ios_17_assessment, cis_ios_17_compliance_score, ip_address, ios_version)
-
-                    print("Exporting to an HTML output.")
-                    report_html_output(parsed_cis_ios_17_assessment, cis_ios_17_compliance_score, report_filename, 
-                                       ip_address, ios_version)
-
+        
             else:
                 print("Error 0002 - Unable to identify Cisco IOS version. Use the '-v' option to specify the IOS version manually. In target.json.")
 
